@@ -1,0 +1,23 @@
+.navbar {
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    color: black;
+    margin-bottom: 2em;
+}
+.title-container {
+    padding: 0 1em;
+}
+.menu-container {
+    display: flex;
+    list-style: none;
+}
+.menu-container a {
+    text-decoration: none;
+    color: inherit;
+}
+.menu-list {
+    padding: 0 1em;
+}

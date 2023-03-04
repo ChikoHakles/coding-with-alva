@@ -2,6 +2,8 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import axios from "axios";
 
+import Navbar from './components/Navbar';
+
 function App() {
   const url = "http://localhost:8080/api/customers";
 
@@ -29,6 +31,7 @@ function App() {
   }, [])
   return (
     <div className='App'>
+      <Navbar/>
       <h1>Data Customer PT. Ngokngok</h1>
       {loading && <div>Wait a moment please ...</div>}
       {error && <div>{`Error. Reason: ${error}`}</div>}
