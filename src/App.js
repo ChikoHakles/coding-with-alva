@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from "axios";
 
 import Navbar from './components/Navbar';
+import Card from './components/Card';
 
 function App() {
   const url = "http://localhost:8080/api/customers";
@@ -36,18 +37,16 @@ function App() {
       {loading && <div>Wait a moment please ...</div>}
       {error && <div>{`Error. Reason: ${error}`}</div>}
 
-      <div className='container card-container'>
-        {data && data.map((c) => {
-          return (
-            <div className='card' key={c.id.toString()}>
-              <h3>{c.nama}</h3>
-              <h5>{c.alamat}</h5>
-              <h5>{c.email}</h5>
-              <h5>{c.telepon}</h5>
-            </div>
-          )
-        })}
+      <div className='container'>
+        <div className='card-container'>
+          {data && data.map((c) => {
+            return (
+              <Card id={c.id} nama={c.nama} alamat={c.alamat} email={c.email} telepon={c.telepon}/>
+            )
+          })}
+        </div>
       </div>
+
     </div>
   );
 }
