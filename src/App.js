@@ -33,11 +33,11 @@ function App() {
   return (
     <div className='App'>
       <Navbar/>
-      <h1>Data Customer PT. Ngokngok</h1>
-      {loading && <div>Wait a moment please ...</div>}
-      {error && <div>{`Error. Reason: ${error}`}</div>}
-
       <div className='container'>
+        <h1>Data Customer PT. Ngokngok</h1>
+        {loading && <div>Wait a moment please ...</div>}
+        {error && <div>{`Error. Reason: ${error}`}</div>}
+
         <div className='card-container'>
           {data && data.map((c) => {
             return (

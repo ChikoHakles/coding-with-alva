@@ -1,6 +1,13 @@
-.card {
-    padding: 0.2em 1.5em;
+.myCard {
+    flex: 0 0 15em;
     margin: 2em;
+    padding: 0.7em 2em;
     background-color: #DFFFD8;
     border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card h3 {
+    margin: 0 0 0.4em;
 }

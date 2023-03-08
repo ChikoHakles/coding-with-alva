@@ -5,5 +5,10 @@
 }
 .card-container {
     display: flex;
-    overflow-x: scroll;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.container {
+    padding: 0 3em;
 }
