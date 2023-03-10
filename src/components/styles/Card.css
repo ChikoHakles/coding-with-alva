@@ -15,7 +15,11 @@
   }
   
   .card-body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     padding: 20px;
+    min-height: 16em;
   }
   
   .card-title {
