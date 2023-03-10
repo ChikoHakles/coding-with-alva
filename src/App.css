@@ -1,7 +1,12 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --pink: #F7C8E0;
+    --green: #DFFFD8;
+    --lightblue: #B4E4FF;
+    --darkblue: #95BDFF;
+    --darkerblue: #3a85ff;
 }
 .card-container {
     display: flex;
