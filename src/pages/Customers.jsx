@@ -1,11 +1,10 @@
-import './App.css';
 import { useState, useEffect } from 'react';
-import axios from "axios";
+import axios from 'axios';
 
-import Navbar from './components/Navbar';
-import Card from './components/Card';
+import Card from '../components/Card';
+import './styles/Customers.css';
 
-function App() {
+function Home() {
   const url = "http://localhost:8080/api/customers";
 
   const [data, setData] = useState(null);
@@ -31,9 +30,7 @@ function App() {
     getData();
   }, [])
   return (
-    <div className='App'>
-      <Navbar/>
-      <div className='container'>
+      <>
         <h1>Data Customer PT. Ngokngok</h1>
         {loading && <div>Wait a moment please ...</div>}
         {error && <div>{`Error. Reason: ${error}`}</div>}
@@ -45,10 +42,7 @@ function App() {
             )
           })}
         </div>
-      </div>
-
-    </div>
+      </>
   );
 }
-
-export default App;
+export default Home;
