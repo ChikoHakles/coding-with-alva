@@ -2,7 +2,7 @@ import './styles/Navbar.css';
 
 function Navbar() {
     return (
-        <div className='navbar'>
+        <div className='nav'>
             <div className='title-container'>
                 NGOKNGOK
             </div>

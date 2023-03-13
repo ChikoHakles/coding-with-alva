@@ -1,9 +1,11 @@
 import './styles/Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div style={{display: 'flex', justifyContent: 'center'}}>
+        <div className='home-container'>
             <h1>INI ADALAH HOME NYA</h1>
+            <Link className='to-customers' to="/customers">Ke Halaman Customers!</Link>
         </div>
     );
 }

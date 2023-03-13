@@ -1,3 +1,6 @@
-h1 {
+.home-container {
     text-align: center;
+}
+.to-customers {
+    margin-top: 5em;
 }

@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Layout from './pages/Layout';
 import Customers from "./pages/Customers";
+import Customer from "./pages/Customer";
 import Home from "./pages/Home";
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "customers/",
         element: <Customers/>
+      },
+      {
+        path: "customers/:id",
+        element: <Customer/>
       }
     ]
   }
